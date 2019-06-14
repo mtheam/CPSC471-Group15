@@ -7,45 +7,32 @@
         <title>Home - TheCoffeeCo</title>
 
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="{{ URL::asset('css/app.css') }}">
+        <link rel="stylesheet" href="{{ URL::asset('css/G15.css') }}">
         <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .masthead {
-                height: 100vh;
-                min-height: 500px;
-                background-image: url('/images/bg.jpg');
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-                }
-        </style>
     </head>
 
 
     <body>
 
+        @include('layouts.nav')
+
         <!-- Full Page Image Header with Vertically Centered Content -->
-        <header class="masthead">
+        <div class="masthead">
           <div class="container h-100">
             <div class="row h-100 align-items-center">
-              <div class="col-12 text-center">
-                <h1 class="font-weight-light">Vertically Centered Masthead Content</h1>
-                <p class="lead">A great starter layout for a landing page</p>
+              <div style="top: 30%;" class="col-12">
+                <h1 class="font-weight-bold">COFFEE FOR YOU</h1>
+                <p class="lead">A better cup, every day, your way. </p>
+                <a class=btn btn-primary role="button" href="/shop">
+                <button type="submit" class="btn btn-primary btn-large">Shop</button>
               </div>
             </div>
           </div>
-        </header>
+        </div>
         <script src="js/app"></script>
     </body>
 </html>
