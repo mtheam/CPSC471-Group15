@@ -1,3 +1,5 @@
+
+<!------Navigation Bar------>
 <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
     <div class="container">
       <a class="navbar-brand" href="#"><img src="/images/brand.png"></a>
@@ -10,7 +12,7 @@
             <a class="nav-link" href="/shop">Shop</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Login</a>
+            <a class="nav-link" href="#exampleModal" data-toggle="modal">Login</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Cart</a>
@@ -19,3 +21,6 @@
       </div>
     </div>
   </nav>
+
+
+@include('layouts/modal')  
