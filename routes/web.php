@@ -15,6 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/admin', 'AdminController@adminHome');
 
 Route::get('/shop',function() {
 	return view('shop');
